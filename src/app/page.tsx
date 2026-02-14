@@ -102,10 +102,11 @@ export default function HomePage() {
               <Typography
                 variant="h1"
                 sx={{
+                  fontFamily: 'var(--font-great-vibes)',
                   color: '#8b0000',
-                  fontSize: { xs: '1.8rem', sm: '2.5rem', md: '3.5rem' },
+                  fontSize: { xs: '2.8rem', sm: '3.8rem', md: '4.8rem' },
                   lineHeight: { xs: 1.3, sm: 1.4, md: 1.5 },
-                  fontWeight: 700,
+                  fontWeight: 400,
                 }}
               >
                 MEvie Valentine's Day Quiz
@@ -121,7 +122,7 @@ export default function HomePage() {
                   lineHeight: { xs: 1.5, sm: 1.6, md: 1.7 },
                 }}
               >
-                Test your love knowledge and see who really knows the relationship best!
+                  Let's see who really knows ball in a mecha romantic mecha chaotic game of quizzical fun :)
               </Typography>
 
               <Button

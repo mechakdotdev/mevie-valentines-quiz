@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Roboto, Work_Sans } from "next/font/google";
+import { Geist, Geist_Mono, Roboto, Work_Sans, Great_Vibes } from "next/font/google";
 import "./globals.css";
 import { MUIThemeProvider } from '@/components/MUIThemeProvider';
 import { QuizProvider } from '@/context/QuizContext';
@@ -26,10 +26,16 @@ const workSans = Work_Sans({
   display: "swap",
   variable: "--font-work-sans",
 });
+const greatVibes = Great_Vibes({
+  weight: ['400'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-great-vibes',
+});
 
 export const metadata: Metadata = {
   title: "MEvie Valentine's Day Quiz",
-  description: "Test your love knowledge in this romantic quiz game",
+  description: "Let's see who really knows ball in a mecha romantic mecha chaotic game of quizzical fun :)",
 };
 
 export default function RootLayout({
@@ -39,7 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} ${workSans.variable}`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${roboto.variable} ${workSans.variable} ${greatVibes.variable}`}>
         <MusicProvider>
           <MUIThemeProvider>
             <QuizProvider>{children}</QuizProvider>
